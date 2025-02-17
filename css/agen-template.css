@@ -1318,7 +1318,7 @@ p {
   position: absolute;
   top: 80px;
   bottom: auto;
-  left: 0%;
+  left: 0%;   
   right: 0%;
 }
 
@@ -1337,7 +1337,7 @@ p {
 }
 
 .hero {
-  background-color: var(--yellow);
+  background-color: #e26761;
   background-position: 0 0;
   background-size: cover;
   /* height:calc(100vh - 300px); */
