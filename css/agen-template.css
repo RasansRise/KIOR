@@ -1337,7 +1337,7 @@ p {
 }
 
 .hero {
-  background-color: grey;
+  background-color: var(--yellow);
   background-position: 0 0;
   background-size: cover;
   padding-top: 240px;
@@ -1354,7 +1354,7 @@ p {
 }
 
 .main-menu {
-  border: 2px solid var(--yellow);
+  border: 2px solid black;
   border-radius: var(--50-radius-size);
   flex: 0 auto;
   align-self: center;
@@ -1389,9 +1389,9 @@ p {
 }
 
 .get-in-touch-button {
-  border: 2px solid var(--yellow);
+  border: 2px solid black;
   background-color: var(--transparent);
-  color: var(--yellow);
+  color: black;
   text-transform: uppercase;
   border-radius: 50px;
   margin-left: 10px;
@@ -1401,7 +1401,7 @@ p {
 
 .menu-item {
   font-family: var(--syne);
-  color: var(--yellow);
+  color: black;
   text-transform: uppercase;
   padding: 15px 10px;
   font-size: 17px;
@@ -1418,8 +1418,8 @@ p {
   margin-top: 0;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 68px;
-  line-height: 70px;
+  font-size: 5vw;
+  line-height: 0.8;
 }
 
 .hero-text {
