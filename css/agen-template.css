@@ -1340,11 +1340,14 @@ p {
   background-color: var(--yellow);
   background-position: 0 0;
   background-size: cover;
-  padding-top: 240px;
-  height:calc(100vh - 300px);
-  padding-bottom: 60px;
+  /* height:calc(100vh - 300px); */
+  position: relative;
 }
-
+.hero video{
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .logo.w--current {
   flex: none;
 }
