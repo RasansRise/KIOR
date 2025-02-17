@@ -1,6 +1,6 @@
 :root {
   --transparent: rgba(255, 255, 255, 0);
-  --yellow: #f9dc4a;
+  --yellow: #f06756;
   --50-radius-size: 50px;
   --black: #000;
   --syne: Syne, sans-serif;
@@ -14,13 +14,20 @@
 .cursor-wrapp {
     pointer-events: none;
 }
+a{
+  text-decoration: none;
+}
 .w-layout-blockcontainer {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-
+.no-container{
+  width:100%;
+  padding:0px 20px;
+  margin: auto;
+}
 .w-layout-layout {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
@@ -1330,10 +1337,11 @@ p {
 }
 
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-color: grey;
   background-position: 0 0;
   background-size: cover;
   padding-top: 240px;
+  height:calc(100vh - 300px);
   padding-bottom: 60px;
 }
 
@@ -1404,9 +1412,8 @@ p {
 }
 
 .hero-big-heading {
-  border-bottom: 1px solid var(--yellow);
   font-family: var(--syne);
-  color: var(--yellow);
+  color: black;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
@@ -1416,7 +1423,7 @@ p {
 }
 
 .hero-text {
-  color: var(--yellow);
+  color: black;
   margin-bottom: 20px;
   font-size: 26px;
   line-height: 30px;
@@ -1427,7 +1434,7 @@ p {
 }
 
 .hero-design {
-  border: 1px solid var(--yellow);
+  border: 1px solid black;
   border-radius: var(--50-radius-size);
   align-items: center;
   padding-right: 40px;
@@ -1440,13 +1447,13 @@ p {
 
 .hero-icon {
   width: 82px;
-  border-right: 1px solid var(--yellow);
+  border-right: 1px solid black;
   padding: 10px 10px 10px 20px;
 }
 
 .hero-details-text {
   font-family: var(--syne);
-  color: var(--yellow);
+  color: black;
   text-transform: uppercase;
   margin-left: 30px;
   font-size: 30px;
@@ -1951,7 +1958,11 @@ p {
   padding-bottom: 10px;
   overflow: hidden;
 }
+.moving-text-section.dark-background{
 
+  background-color: black;
+  color:var(--yellow)
+}
 .moving-text {
   font-family: var(--syne);
   color: var(--black);
@@ -1961,7 +1972,9 @@ p {
   font-weight: 400;
   line-height: 30px;
 }
-
+.moving-text-section.dark-background .moving-text{
+  color:var(--yellow)
+}
 .footer {
   background-color: #f2f2f2;
   padding-top: 130px;
@@ -1969,7 +1982,6 @@ p {
 }
 
 .footer-stack {
-  border-bottom: 1px solid #000;
   padding: 0 0 50px;
 }
 
@@ -2996,6 +3008,8 @@ p {
   .hero-text-box {
     align-items: center;
     display: flex;
+    border-top:1px solid var(--yellow);
+    padding-top:20px;
   }
 
   .hero-text {
