@@ -1348,6 +1348,12 @@ p {
   object-fit: contain;
   object-position: center;
 }
+@media(max-width:991px){
+
+  .hero video{
+    aspect-ratio: 1;
+  }
+}
 .logo.w--current {
   flex: none;
 }
@@ -1413,7 +1419,16 @@ p {
 .menu-item:hover, .menu-item.w--current {
   color: var(--white);
 }
+@media(max-width:991px){
+  .menu-item {
+    color: white;
+  }
+  
+  .menu-item:hover, .menu-item.w--current {
+    color: var(--yellow);
+  }
 
+}
 .hero-big-heading {
   font-family: var(--syne);
   color: black;
@@ -3437,7 +3452,7 @@ p {
   }
 
   .menu-button {
-    border: 1px solid var(--yellow);
+    border: 1px solid black;
     flex: 0 auto;
     order: 1;
     margin-left: 20px;
@@ -3447,9 +3462,8 @@ p {
   .menu-button.w--open {
     background-color: var(--transparent);
   }
-
   .icon {
-    color: var(--yellow);
+    color: black;
     font-size: 33px;
   }
 
