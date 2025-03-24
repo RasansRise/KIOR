@@ -275,13 +275,16 @@
                 </div>
 
             </div> -->
-            <h5 style="text-align: center;">All copyrights &copy; reserved to KIO-R</h5>
+            <h5 style="text-align: center;">All copyrights &copy;<span class="year"></span> reserved to KIO-R</h5>
 
 
         </div>
 
     </div>
-
+    
+    <script>
+        document.querySelector('.year').innerHTML = new Date().getFullYear(); 
+    </script>
 
     <script src="js/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">
