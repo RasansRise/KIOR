@@ -2307,6 +2307,7 @@ p {
 .services-icon {
   align-self: flex-end;
   margin-bottom: 40px;
+  width:50px;
 }
 
 .services-title {
@@ -2725,7 +2726,7 @@ p {
 }
 
 .contact-infos {
-  background-image: url('../images/contact-bg.png');
+  background-image: url('../images/Contact/contact\ us\ black.webp');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3440,7 +3441,7 @@ p {
 
   .main-title {
     font-size: 60px;
-    line-height: 40px;
+    line-height: 60px;
   }
 
   .main-title.main-title-blog.title-right {
@@ -3694,10 +3695,10 @@ p {
   .header-inner {
     display: block;
   }
-
+/* 
   .hero {
     padding-top: 270px;
-  }
+  } */
 
   .logo-img {
     width: 170px;
