@@ -1497,7 +1497,9 @@ p {
   font-size: 26px;
   line-height: 30px;
 }
-
+.ar .hero-text{
+  line-height: 35px;
+}
 .hero-details {
   display: flex;
 }
@@ -1721,7 +1723,9 @@ p {
   font-size: 26px;
   line-height: 30px;
 }
-
+.ar .team-parapgraph{
+  line-height: 35px;
+}
 .team-parapgraph.blog-paragraph {
   float: left;
   color: var(--black);
@@ -1893,6 +1897,7 @@ p {
   margin-bottom: 50px;
   font-size: 54px;
   font-weight: 400;
+  line-height: 65px;
 }
 
 .facts-numbers {
@@ -2299,7 +2304,9 @@ p {
   font-size: 26px;
   line-height: 30px;
 }
-
+.ar .facts-paragraph{
+  line-height: 35px;
+}
 .service-page {
   background-color: #f2f2f2;
   padding: 130px 0;
@@ -2417,7 +2424,12 @@ p {
   border-radius: 5px;
   padding: 30px;
 }
-
+.single-post-text-cell h2{
+  line-height: 45px;
+}
+.single-post-text-cell p{
+  line-height: 30px;
+}
 .single-post-img {
   mix-blend-mode: normal;
   border-radius: 5px;
@@ -2770,7 +2782,9 @@ p {
   text-decoration: none;
   display: flex;
 }
-
+.ar .info-details{
+  line-height: 30px;
+}
 .contact-icon {
   background-color: var(--transparent);
   border-radius: 5px;
@@ -3604,7 +3618,9 @@ p {
   .main-title.title-yellow {
     text-align: left;
   }
-
+  .ar .main-title.title-yellow{
+    text-align: right;
+  }
   .awards-right {
     flex: 1;
     justify-content: flex-start;
@@ -3770,7 +3786,7 @@ p {
     font-size: 34px;
     line-height: 33px;
   }
-
+ 
   .clients, .services {
     padding-top: 60px;
     padding-bottom: 60px;
