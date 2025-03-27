@@ -11,6 +11,7 @@
   --white-2: white;
   --black-2: black;
 }
+
 .ar{
   text-align: right;
 }
@@ -1309,7 +1310,10 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
-
+body.ar{
+  font-family:"Cairo",sans-serif;
+  --syne:"Cairo",sans-serif;
+}
 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1328,7 +1332,9 @@ p {
   color: #000;
   font-family: Manrope, sans-serif;
 }
-
+.ar .body{
+  font-family: "Cairo",sans-serif;
+}
 .header{
   padding:80px 0 ;
   background-color: var(--yellow);
@@ -1360,7 +1366,7 @@ p {
 }
 
 .hero {
-  background-color: #e26761;
+  background-color: var(--yellow);
   background-position: 0 0;
   background-size: cover;
   /* height:calc(100vh - 300px); */
@@ -1371,10 +1377,22 @@ p {
   object-fit: contain;
   object-position: center;
 }
+.hero-image{
+  display: none;
+}
 @media(max-width:991px){
-
+  .hero{
+    padding:100px 50px;
+  }
+  .header.absolute{
+    position: relative;
+  }
   .hero video{
     aspect-ratio: 1;
+    display: none;
+  }
+  .hero-image{
+    display: block;
   }
 }
 .logo.w--current {
@@ -1468,6 +1486,7 @@ p {
   font-size: 5vw;
   line-height: 0.8;
 }
+
 .ar .hero-big-heading{
   line-height: 1.2;
 }
@@ -3502,7 +3521,6 @@ p {
     border: 1px solid black;
     flex: 0 auto;
     order: 1;
-    margin-left: 20px;
     padding: 10px;
   }
 
@@ -3693,9 +3711,7 @@ p {
 }
 
 @media screen and (max-width: 479px) {
-  .header-inner {
-    display: block;
-  }
+
 /* 
   .hero {
     padding-top: 270px;
