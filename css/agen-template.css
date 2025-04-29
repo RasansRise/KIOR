@@ -10,14 +10,52 @@
   --secion-bg: #f2f2f2;
   --white-2: white;
   --black-2: black;
+  --delay:0s;
+  --bottom:20px;
 }
-
+html{
+  scroll-behavior: smooth;
+}
+.call-to-action-buttons a{
+  width:60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  font-size: 20px;
+  position: fixed;
+  bottom:var(--bottom);
+  left:20px;
+  opacity: 0;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  animation: fadeUp 1s var(--delay) ease-in-out forwards;
+}
+@keyframes fadeUp {
+  0%{
+    opacity:0;
+    bottom:0;
+  }
+  100%{
+    opacity:1;
+    bottom:var(-bottom)
+  }
+}
 .ar{
   text-align: right;
 }
 .logo{
   text-decoration: none;
-  width: 200px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  margin-bottom:50px;
+}
+@media(max-width:500px){
+  .logo{
+    width:250px;
+  }
 }
 ul b{
   font-size:24px;
@@ -35,7 +73,7 @@ a{
   text-decoration: none;
 }
 .w-layout-blockcontainer {
-  max-width: 940px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1408,7 +1446,7 @@ p {
   border-radius: var(--50-radius-size);
   flex: 0 auto;
   align-self: center;
-  margin-left: auto;
+ 
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1420,7 +1458,16 @@ p {
   margin-left: auto;
   display: flex;
 }
-
+.ar .header-right-side{
+  margin-right:auto;
+  margin-left:unset;
+}
+@media(max-width:1250px){
+  .header-right-side{
+    display:none;
+  }
+  
+}
 .cart-button {
   width: 55px;
   height: 55px;
@@ -1488,7 +1535,7 @@ p {
 }
 
 .ar .hero-big-heading{
-  line-height: 1.2;
+  line-height: 1.2 !important;
 }
 
 .hero-text {
@@ -1897,7 +1944,10 @@ p {
   margin-bottom: 50px;
   font-size: 54px;
   font-weight: 400;
-  line-height: 65px;
+  line-height: 50px;
+}
+.ar .facts-title{
+  line-height: 65px !important;
 }
 
 .facts-numbers {
@@ -2122,7 +2172,13 @@ p {
   line-height: 57px;
   direction: ltr !important;
 }
-
+.socal-phone-and-mail:last-child .social-phone-text{
+  line-height: 70px;
+}
+.ar .socal-phone-and-mail:last-child .social-phone-text{
+  line-height: 80px;
+  direction: rtl !important;
+}
 .copyright {
   background-color: var(--white);
   text-align: center;
@@ -2350,6 +2406,19 @@ p {
   line-height: 24px;
 }
 
+@media (hover: hover) {
+  .services-item{
+    align-items: center;
+  }
+  .service-description {
+    transition: 0.3s max-height ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .services-item:hover .service-description{
+    max-height: 200px;
+  }
+}
 .features {
   background-image: url('../images/services-bg.png');
   background-position: 0 0;
@@ -3088,7 +3157,6 @@ p {
   .main-menu {
     flex: none;
     align-self: center;
-    margin-left: auto;
   }
   .ar .main-menu{
     margin-left:0;
@@ -3276,7 +3344,11 @@ p {
     align-self: flex-end;
     margin-bottom: 60px;
   }
-
+  @media(hover:hover){
+    .services-icon{
+      align-self: center;
+    }
+  }
   .services-title {
     text-transform: uppercase;
     margin-top: 0;
@@ -3459,7 +3531,22 @@ p {
     padding: 40px 30px;
   }
 }
+@media screen and (max-width:1250px){
+  .menu-button {
+    border: 1px solid black;
+    flex: 0 auto;
+    order: 1;
+    padding: 10px;
+  }
 
+  .menu-button.w--open {
+    background-color: var(--transparent);
+  }
+  .icon {
+    color: black;
+    font-size: 33px;
+  }
+}
 @media screen and (max-width: 991px) {
   .main-menu {
     background-color: var(--black);
@@ -3530,21 +3617,8 @@ p {
     font-size: 55px;
     line-height: 45px;
   }
+  
 
-  .menu-button {
-    border: 1px solid black;
-    flex: 0 auto;
-    order: 1;
-    padding: 10px;
-  }
-
-  .menu-button.w--open {
-    background-color: var(--transparent);
-  }
-  .icon {
-    color: black;
-    font-size: 33px;
-  }
 
   .about-tabs-link {
     width: 100%;
@@ -3679,7 +3753,9 @@ p {
     font-size: 35px;
     line-height: 30px;
   }
-
+  .social-phone-text:last-child{
+    line-height: 50px;
+  }
   .copyright {
     padding: 20px;
   }

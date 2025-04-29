@@ -312,13 +312,13 @@ button,
   margin: 0 0 15px;
 }
 .w-form-done {
-  display: none;
+  display: none !important;
   padding: 20px;
   text-align: center;
   background-color: #dddddd;
 }
 .w-form-fail {
-  display: none;
+  display: none !important;
   margin-top: 10px;
   padding: 10px;
   background-color: #ffdede;
@@ -1712,7 +1712,7 @@ textarea.w-select {
 .w--nav-dropdown-list-open {
   position: static;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1250px) {
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
   }
