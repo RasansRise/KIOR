@@ -17,13 +17,13 @@ html{
   scroll-behavior: smooth;
 }
 .call-to-action-buttons a{
-  width:60px;
-  height: 60px;
+  width:70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   color:black;
-  font-size: 20px;
+  font-size: 25px;
   position: fixed;
   bottom:var(--bottom);
   left:20px;
@@ -31,6 +31,14 @@ html{
   border-radius: 50%;
   background-color: var(--yellow);
   animation: fadeUp 1s var(--delay) ease-in-out forwards;
+}
+.call-to-action-buttons .whatsapp-button{
+  background-color: #25D366;
+  color:white;
+  font-size:30px;
+}
+.call-to-action-buttons .phone-button{
+  background-color: #edcb9c;
 }
 @keyframes fadeUp {
   0%{
